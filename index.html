@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Unibrow TV Test v. 2</title>
+	<link href="css/global.css" rel="stylesheet">
+
+	<script type="text/javascript" src="js/libs/jquery-1.11.1.min.js"></script>
+	
+
+	<!-- libs -->
+	
+	<script type="text/javascript" src="js/libs/mousetrap.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.simpleWeather.min.js"></script>
+
+
+	<script type="text/javascript" src="js/custom/navHandlers.js"></script> 
+	
+	<script>
+		
+		$(document).ready(function(){
+			
+			$('#menuList').bind(mainNavHandler());
+
+			var temp = new Weather();
+			var currentTime = new timeStamp();
+		
+		});
+
+	</script>
+
+	</head>
+<body>
+
+
+
+<div id="header">
+	<div class="headerLeft"><span class="bcHi"> Welcome Back Douglas!</span></div>
+	<div class="headerRight"><span id="time"></span> / <span id="temp"></span></div>
+
+</div>
+
+<div id="appShell">
+	<div id="menuBarOverlay"></div>
+	<div id="menuContainer">
+		<ul id="menuList">
+			<li class="selected">My Guide</li>
+			<li>On TV</li>
+			<li>On Demand</li>
+			<li>Search</li>
+			<li>Settings</li>
+		</ul>
+
+		<div id="pig">
+			<p class="subTitle">now watching</p>
+			<img src="res/images/pig.png">
+			<p class="pigProgTitle">Marvel's Agents of Shield</p>
+			<p class="pigProgInfo">ch. 07 | 59min left</p>
+		</div>
+
+	</div>
+
+	<div id="contentContainer">
+
+	  <div id="listingsGrid"><img src="res/images/listings.png"></div>	
+
+	  <div id="dashboard" class="currScreen">
+	  	<div id="contentNav">
+
+	  		<h1>Movies</h1>
+			<div id="contentCol1">
+				<div id="contentItem1"><img src="res/images/content/movies1.png"></div>
+				<div id="contentItem2"><img src="res/images/content/movies2.png"></div>
+				<div id="contentItem3"><img src="res/images/content/movies3.png"></div>
+				<div id="contentItem4"><img src="res/images/content/movies4.png"></div>
+				<div id="contentItem5"><img src="res/images/content/movies5.png"></div>
+			</div>
+
+			<h1>TV Shows</h1>
+			<div id="contentCol2">
+				<div id="contentItem1"><img src="res/images/content/tv1.png"></div>
+				<div id="contentItem2"><img src="res/images/content/tv2.png"></div>
+				<div id="contentItem3"><img src="res/images/content/tv3.png"></div>
+				<div id="contentItem4"><img src="res/images/content/tv4.png"></div>
+				<div id="contentItem5"><img src="res/images/content/tv6.png"></div>
+			</div>
+
+			<h1>Web Videos</h1>
+			<div id="contentCol3">
+				<div id="contentItem1"><img src="res/images/content/web1.png"></div>
+				<div id="contentItem2"><img src="res/images/content/web2.png"></div>
+				<div id="contentItem3"><img src="res/images/content/web3.png"></div>
+				<div id="contentItem4"><img src="res/images/content/web4.png"></div>
+				<div id="contentItem5"><img src="res/images/content/web5.png"></div>
+			</div>
+
+			<h1>DVR</h1>
+			<div id="contentCol4">
+				<div id="contentItem1"><img src="res/images/content/dvr1.png"></div>
+				<div id="contentItem2"><img src="res/images/content/dvr2.png"></div>
+				<div id="contentItem3"><img src="res/images/content/dvr3.png"></div>
+				<div id="contentItem4"><img src="res/images/content/dvr4.png"></div>
+			</div>
+
+
+		</div>
+	</div>
+
+</div>
+
+	<!-- custom -->
+	<script type="text/javascript" src="js/custom/weather.js"></script> 
+	<script type="text/javascript" src="js/custom/timeStamp.js"></script>
+
+	
+
+</body>
+</html>
